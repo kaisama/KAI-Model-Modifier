@@ -3,7 +3,7 @@ A small tool to fix 3d models' pivot, scale and orientation
 
 How to use:
 
-1- Download the latest package from:
+1- Download the latest package from: https://github.com/kaisama/KAI-Model-Modifier/releases
 
 2- Import the package into your project
 
