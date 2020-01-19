@@ -1,5 +1,5 @@
 # KAI-Model-Modifier
-a small tool to fix 3d models' pivot, scale and orientation
+A small tool to fix 3d models' pivot, scale and orientation
 
 How to use:
 
@@ -20,6 +20,6 @@ attempt to download "FBX Exporter" from the package manager if you don't have it
 
 8- You can enter the new scale and rotation you want
 
-9- By clicking Apply settings the model will be created in the scene with the settings you entered
+9- By clicking "Apply settings" the model will be created in the scene with the settings you entered
 
-10- By clicking Export FBX a window will popup to select the settings you want for the export
+10- By clicking "Export Model To FBX File" a window will popup to select the settings you want for the export
