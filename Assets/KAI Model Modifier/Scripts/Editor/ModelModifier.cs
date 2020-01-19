@@ -16,7 +16,7 @@ namespace KAI
 
         private GameObject Model;
         private GameObject NewRoot;
-        private string NewRootName;
+        private string NewRootName = "";
         private PIVOT_TYPE NewPivot;
 
         private bool UseNewScale;
