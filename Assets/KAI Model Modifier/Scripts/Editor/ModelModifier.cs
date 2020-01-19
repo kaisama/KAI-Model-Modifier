@@ -276,7 +276,7 @@ namespace KAI
                     NewScale = Vector3.one;
                 }
 
-                NewRoot.transform.localScale = NewScale;
+                NewRoot.transform.GetChild(0).localScale = NewScale;
             }
 
             if (UseNewRotation)
