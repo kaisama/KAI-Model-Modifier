@@ -16,7 +16,7 @@ namespace KAI
 
         private GameObject Model;
         private GameObject NewRoot;
-        private string NewRootName = "ROOT";
+        private string NewRootName;
         private PIVOT_TYPE NewPivot;
 
         private bool UseNewScale;
@@ -117,7 +117,7 @@ namespace KAI
 
                     GUILayout.Space(5);
 
-                    if (GUILayout.Button("Export Model"))
+                    if (GUILayout.Button("Export Model To FBX File"))
                     {
                         if (NewRoot == null)
                         {
@@ -164,6 +164,11 @@ namespace KAI
             EditorGUILayout.LabelField("New Root Name", EditorStyles.helpBox, GUILayout.Width(((position.width - 6) / 4)));
             NewRootName = EditorGUILayout.TextField(NewRootName, EditorStyles.textField, GUILayout.Width(((position.width - 6) * 3 / 4) - 15), GUILayout.Height(20));
             EditorGUILayout.EndHorizontal();
+
+            if (Model && NewRootName.Length == 0)
+            {
+                NewRootName = Model.name;
+            }
 
             EditorGUILayout.Space();
             EditorGUILayout.Space();
