@@ -271,6 +271,11 @@ namespace KAI
 
             if (UseNewScale)
             {
+                if (NewScale.sqrMagnitude == 0)
+                {
+                    NewScale = Vector3.one;
+                }
+
                 NewRoot.transform.localScale = NewScale;
             }
 
